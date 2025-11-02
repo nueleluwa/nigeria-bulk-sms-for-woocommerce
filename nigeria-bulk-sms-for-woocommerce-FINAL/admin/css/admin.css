@@ -1,0 +1,883 @@
+/**
+ * Admin Styles
+ *
+ * @package WC_Nigeria_Bulk_SMS
+ * @since 1.0.0
+ */
+
+/* ========================================
+   General Admin Styles
+   ======================================== */
+
+.nbsms-admin-wrap {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.nbsms-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.nbsms-card h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+
+.nbsms-button-primary {
+    background: #2271b1;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nbsms-button-primary:hover {
+    background: #135e96;
+}
+
+/* ========================================
+   Notices
+   ======================================== */
+
+.nbsms-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.nbsms-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.nbsms-notice {
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nbsms-notice .dashicons {
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.nbsms-notice.nbsms-info {
+    background: #e5f5fa;
+    border-left: 4px solid #00a0d2;
+    color: #00566a;
+}
+
+.nbsms-notice.nbsms-warning {
+    background: #fff8e5;
+    border-left: 4px solid #f0b849;
+    color: #674922;
+}
+
+/* ========================================
+   Loading Spinner
+   ======================================== */
+
+.nbsms-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    border-top-color: #2271b1;
+    animation: nbsms-spin 1s ease-in-out infinite;
+}
+
+@keyframes nbsms-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ========================================
+   Settings Page Specific
+   ======================================== */
+
+.nbsms-settings-wrap {
+    margin-right: 20px;
+}
+
+.nbsms-settings-wrap .nav-tab-wrapper {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.nbsms-settings-wrap .nav-tab {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: -1px;
+}
+
+.nbsms-settings-wrap .nav-tab-active {
+    border-bottom-color: #f0f0f1;
+    background: #f0f0f1;
+}
+
+.nbsms-tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.nbsms-settings-form .form-table {
+    margin-top: 0;
+}
+
+.nbsms-settings-form .form-table th {
+    padding: 20px 10px 20px 0;
+    width: 200px;
+}
+
+.nbsms-settings-form .form-table td {
+    padding: 20px 10px;
+}
+
+.nbsms-settings-form .required {
+    color: #d63638;
+}
+
+/* Balance Display */
+.nbsms-balance-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: #f0f0f1;
+    border-radius: 4px;
+}
+
+.nbsms-balance-box .balance-amount {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2271b1;
+}
+
+.nbsms-balance-box .button-small {
+    padding: 2px 8px;
+    height: auto;
+    line-height: 1;
+}
+
+.nbsms-balance-box .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Connection Result */
+#nbsms-connection-result {
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#nbsms-connection-result.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    display: block;
+}
+
+#nbsms-connection-result.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    display: block;
+}
+
+/* Button with icon */
+.button .dashicons {
+    line-height: 1.4;
+    margin-right: 5px;
+}
+
+/* Submit button area */
+.submit {
+    padding: 20px 0 0;
+    margin: 0;
+}
+
+.submit .button-large {
+    padding: 8px 20px;
+    height: auto;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .nbsms-settings-form .form-table th,
+    .nbsms-settings-form .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .nbsms-settings-form .form-table th {
+        padding-bottom: 5px;
+    }
+    
+    .nbsms-balance-box {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* ========================================
+   Dashboard Widgets (for Phase 7)
+   ======================================== */
+
+.nbsms-stat-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+.nbsms-stat-card .stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2271b1;
+    line-height: 1;
+}
+
+.nbsms-stat-card .stat-label {
+    margin-top: 10px;
+    color: #646970;
+    font-size: 14px;
+}
+
+/* ========================================
+   Tables (for Logs & Templates)
+   ======================================== */
+
+.nbsms-table-wrap {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.nbsms-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nbsms-table thead {
+    background: #f9f9f9;
+}
+
+.nbsms-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ccd0d4;
+}
+
+.nbsms-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nbsms-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.nbsms-table .status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nbsms-table .status-badge.sent {
+    background: #d4edda;
+    color: #155724;
+}
+
+.nbsms-table .status-badge.failed {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.nbsms-table .status-badge.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* ========================================
+   Utilities
+   ======================================== */
+
+.nbsms-hidden {
+    display: none !important;
+}
+
+.nbsms-text-center {
+    text-align: center;
+}
+
+.nbsms-text-right {
+    text-align: right;
+}
+
+.nbsms-mt-20 {
+    margin-top: 20px;
+}
+
+.nbsms-mb-20 {
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   Testing Page Specific
+   ======================================== */
+
+.nbsms-testing-wrap {
+    margin-right: 20px;
+}
+
+.nbsms-testing-content {
+    margin-top: 20px;
+}
+
+.nbsms-testing-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .nbsms-testing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nbsms-test-form-card,
+.nbsms-format-guide,
+.nbsms-test-history {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.nbsms-test-form-card h2,
+.nbsms-format-guide h3,
+.nbsms-test-history h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Character Counter */
+.character-counter {
+    margin-top: 10px;
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.counter-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #646970;
+}
+
+.counter-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.counter-info strong {
+    color: #2271b1;
+    font-size: 15px;
+}
+
+.counter-bar {
+    width: 100%;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.counter-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #46b450, #2271b1);
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.counter-progress.warning {
+    background: linear-gradient(90deg, #f0b849, #f0b849);
+}
+
+.counter-progress.danger {
+    background: linear-gradient(90deg, #dc3232, #dc3232);
+}
+
+/* Validation Result */
+.validation-result {
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    display: none;
+}
+
+.validation-result.valid {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+}
+
+.validation-result.invalid {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+}
+
+/* Test Result */
+.test-result {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+.test-result.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    display: block;
+}
+
+.test-result.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    display: block;
+}
+
+.test-result strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.test-result-details {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 13px;
+}
+
+.test-result-details span {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Format Guide */
+.format-list,
+.tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.format-list li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.format-example {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #2271b1;
+    font-size: 14px;
+}
+
+.format-label {
+    color: #646970;
+    font-size: 13px;
+}
+
+.tips-list li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+    color: #646970;
+}
+
+.tips-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #46b450;
+    font-weight: bold;
+}
+
+/* Test History Table */
+.nbsms-test-history {
+    margin-top: 20px;
+}
+
+.message-preview {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: help;
+}
+
+.view-all-logs {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Required Field Indicator */
+.required {
+    color: #d63638;
+    font-weight: bold;
+}
+
+/* Responsive adjustments for testing page */
+@media screen and (max-width: 782px) {
+    .counter-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .format-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+/* ========================================
+   Templates Page Specific
+   ======================================== */
+
+.nbsms-templates-wrap {
+    margin-right: 20px;
+}
+
+.nbsms-templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nbsms-template-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.nbsms-template-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nbsms-template-card.is-inactive {
+    opacity: 0.6;
+}
+
+.template-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.template-name {
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.badge-default {
+    background: #e5f5fa;
+    color: #00566a;
+}
+
+.badge-inactive {
+    background: #f0f0f1;
+    color: #646970;
+}
+
+.template-type {
+    font-size: 12px;
+    color: #646970;
+    text-transform: uppercase;
+}
+
+.template-preview {
+    color: #646970;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    min-height: 60px;
+}
+
+.template-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    color: #646970;
+    margin-bottom: 15px;
+}
+
+.template-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.template-card-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.template-card-actions .button {
+    flex: 1;
+    justify-content: center;
+}
+
+/* Template Editor */
+.nbsms-template-editor {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .nbsms-template-editor {
+        grid-template-columns: 1fr;
+    }
+}
+
+.template-editor-sidebar {
+    position: sticky;
+    top: 32px;
+    align-self: start;
+}
+
+.variables-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.variable-button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.variable-button:hover {
+    background: #e5f5fa;
+    border-color: #2271b1;
+}
+
+.variable-button code {
+    display: block;
+    color: #2271b1;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.variable-desc {
+    display: block;
+    font-size: 12px;
+    color: #646970;
+}
+
+.template-preview-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.template-preview-box {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Variables Reference */
+.nbsms-variables-reference .variables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.variable-item {
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 3px;
+}
+
+.variable-code {
+    display: block;
+    color: #2271b1;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.variable-description {
+    font-size: 13px;
+    color: #646970;
+}
+
+.variables-example {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.example-box {
+    padding: 15px;
+    background: #f8f9fa;
+    border-left: 3px solid #2271b1;
+    margin: 10px 0;
+}
+
+/* Template View */
+.nbsms-template-view-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .nbsms-template-view-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.template-content-display,
+.template-preview-display {
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    line-height: 1.6;
+    font-family: 'Courier New', monospace;
+}
+
+.template-preview-display {
+    background: #e5f5fa;
+}
+
+.variables-used-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.variables-used-list li {
+    padding: 5px 0;
+}
+
+/* ========================================
+   Notifications Settings
+   ======================================== */
+
+.nbsms-notifications-table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+}
+
+.nbsms-notifications-table thead th {
+    background: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ccd0d4;
+}
+
+.nbsms-notifications-table tbody td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: top;
+}
+
+.nbsms-notifications-table .notification-row:hover {
+    background: #f9f9f9;
+}
+
+.nbsms-notifications-table select {
+    width: 100%;
+}
+
+.nbsms-notifications-table input[type="checkbox"] {
+    margin: 0;
+}
+
+.nbsms-notifications-table .description {
+    margin: 5px 0 0;
+    font-size: 13px;
+}
