@@ -1,0 +1,101 @@
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/cache/supercache/
+
+# WP-CLI
+wp-cli.local.yml
+
+# Development
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.stylelintcache
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Build
+/build/
+/dist/
+*.zip
+
+# Composer
+/vendor/
+composer.lock
+composer.phar
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+/coverage/
+.phpunit.result.cache
+
+# Backups
+*.sql
+*.sql.gz
+*.bak
+*-backup/
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Package managers
+package-lock.json
+yarn.lock
+
+# Compiled CSS/JS (if using build tools)
+*.min.css
+*.min.js
+# Exception for Chart.js
+!admin/js/chart.min.js
+
+# Documentation (keep in repo)
+!README.md
+!CONTRIBUTING.md
+!CHANGELOG.md
+!LICENSE
+
+# Plugin specific
+/languages/*.mo
+!/languages/nigeria-bulk-sms-for-woocommerce.pot
