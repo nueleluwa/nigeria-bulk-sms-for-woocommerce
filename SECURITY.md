@@ -19,7 +19,7 @@ The Nigeria Bulk SMS for WooCommerce team takes security bugs seriously. We appr
 **DO NOT** open a public GitHub issue for security vulnerabilities.
 
 Instead, please report security vulnerabilities by emailing:
-- **Email:** [Your security email]
+- **Email:** luwie93@gmail.com
 - **Subject:** `[SECURITY] Nigeria Bulk SMS for WooCommerce - Brief Description`
 
 ### What to Include
@@ -181,8 +181,6 @@ Security updates will be:
 
 ## Contact
 
-- **Security Email:** [Your security email]
-- **General Email:** [Your general email]
 - **GitHub:** [@nueleluwa](https://github.com/nueleluwa)
 
 ## Additional Resources
